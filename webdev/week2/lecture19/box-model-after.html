@@ -4,15 +4,27 @@
 <meta charset="utf-8">
 <title>The Box Model</title>
 <style>
-
-body {
+* {
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+}
+
+body {
   background-color: gray;
 }
 
 #box {
   background-color: blue;
+  padding: 10px 10px 10px 10px; /*equivalent to padding: 10px;*/
+  border: 5px solid black;
+  /*margin: 40px;*/
+  height: 50px;
+  margin-top: 20px;
+  width: 300px;
+  /*box-sizing: border-box;*/
+  /*box-sizing: content-box;*/
+  overflow: auto;
 }
 #content {
   background-color: #90EE90; /*green*/
@@ -29,7 +41,7 @@ h1 {
 <h1>Box Model</h1>
 
 <div id="box">
-  <div id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+  <div id="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, ad, necessitatibus! Corporis eligendi magni, et eveniet error temporibus accusamus, aut voluptates vitae nesciunt nam neque sint rem commodi, reprehenderit laboriosam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, culpa. Eaque reiciendis rerum labore voluptatibus officiis esse commodi veritatis suscipit, illum fugiat ipsum placeat maiores qui. Aspernatur nisi vel, incidunt?</div>
 </div>
 
 
